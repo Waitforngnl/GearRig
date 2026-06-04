@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Snackbar } from "@mui/material";
 import { Alert } from "@mui/material";
 import { useCart } from "../context/CartContext";
-import { motion } from "framer-motion"; // Import motion from Framer Motion for animations
+import { motion } from "framer-motion";
 import i18n from "../components/common/components/LangConfig";
 
 function Wishlist() {

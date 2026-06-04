@@ -35,12 +35,8 @@ function ChangeLang() {
   const handleMassage = () => {
     if (selectedLanguage === "en") {
       return "The page will be reloaded and the language will be changed to English!";
-    } else if (selectedLanguage === "gr") {
-      return "Die Seite wird neu geladen und die Sprache wird auf Deutsch geändert!";
-    } else if (selectedLanguage === "ar") {
-      return "سيتم إعادة تحميل الصفحة وتغيير اللغة للعربية!";
-    } else if (selectedLanguage === "es") {
-      return "¡La página se recargará y el idioma se cambiará a español!";
+    } else if (selectedLanguage === "vn") {
+      return "Trang sẽ được tải lại và ngôn ngữ sẽ được chuyển sang tiếng Việt!";
     }
   };
 
@@ -50,12 +46,10 @@ function ChangeLang() {
         sx={styles}
         value={lang}
         onChange={langChange}
-        disabled={loading} // Disable select while loading
+        disabled={loading}
       >
         <MenuItem value="en">English</MenuItem>
-        <MenuItem value="ar">Arabic (العربية)</MenuItem>
-        <MenuItem value="gr">German (Deutsch)</MenuItem>
-        <MenuItem value="es">Spanish (Español)</MenuItem>
+        <MenuItem value="vn">Vietnamese (Tiếng Việt)</MenuItem>
       </Select>
       {loading && (
         <>
